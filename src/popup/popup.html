@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Copy Indie Hackers Transcript</title>
+        <link rel="stylesheet" href="styles/popup.css" />
+    </head>
+    <body
+        class="w-140 bg-bg text-text font-sans text-size leading-5"
+        data-theme="dark"
+    >
+        <div class="flex flex-col gap-3 p-3">
+            <div class="flex items-center justify-between">
+                <h1 class="text-sm font-semibold">
+                    Copy Indie Hackers Transcript
+                </h1>
+                <div
+                    id="status"
+                    role="status"
+                    aria-live="polite"
+                    class="text-xs text-muted"
+                ></div>
+            </div>
+
+            <div
+                class="text-xs text-muted bg-panel-2 border border-border rounded-md p-2.5"
+            >
+                Open an Indie Hackers podcast episode, then click this extension
+                to load the transcript.
+            </div>
+
+            <textarea
+                id="output"
+                class="w-full h-105 bg-panel text-text border border-border outline-none focus:outline-none focus:ring-0 rounded-md p-2 font-mono text-[12px] leading-5 appearance-none resize-y box-border"
+                placeholder="Transcript will appear here..."
+                readonly
+            ></textarea>
+
+            <div class="flex gap-2">
+                <button
+                    id="copyMarkdown"
+                    class="flex-1 py-2.5 bg-accent text-white font-semibold rounded-md hover:bg-accent-hover text-size"
+                >
+                    Copy Transcript
+                </button>
+                <button
+                    id="saveTxt"
+                    class="flex-1 py-2.5 bg-panel text-text font-semibold rounded-md border border-border hover:bg-panel-2 text-size"
+                >
+                    Save transcript.txt
+                </button>
+            </div>
+        </div>
+        <script src="popup.js" type="module"></script>
+    </body>
+</html>

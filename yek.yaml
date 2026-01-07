@@ -1,0 +1,11 @@
+project: copy-indiehackers-transcript
+paths:
+  include:
+    - src
+    - scripts
+    - manifests
+    - tests
+settings:
+  ignore:
+    - node_modules
+    - dist

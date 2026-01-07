@@ -1,0 +1,31 @@
+{
+	"manifest_version": 3,
+	"name": "Copy Indie Hackers Transcript",
+	"version": "1.0.0",
+	"description": "Copy Indie Hackers podcast transcripts as markdown or text",
+	"permissions": ["activeTab", "scripting"],
+	"host_permissions": ["https://www.indiehackers.com/*"],
+	"icons": {
+		"16": "icons/icon16.png",
+		"32": "icons/icon32.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	},
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "icons/icon16.png",
+			"32": "icons/icon32.png",
+			"48": "icons/icon48.png",
+			"128": "icons/icon128.png"
+		}
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "copy-indiehackers-transcript@myextensions.com"
+		}
+	}
+}
